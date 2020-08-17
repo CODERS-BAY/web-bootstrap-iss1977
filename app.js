@@ -1,6 +1,6 @@
 $(function () {
     $(window).on('scroll', function () {
-        if ( $(window).scrollTop() > 500 ) {
+        if ( $(window).scrollTop() > 50 ) {
             $('.navbar').addClass('active');
             console.log("Add active");
         } else {

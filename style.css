@@ -4,9 +4,13 @@
     padding: 0;
 }
 
-.navbar a{
-    color: white;
-}
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 10px solid rgba(255, 255, 255, 0.3);
+  }
+
 
 
 /* Styling the main Hero section*/
@@ -15,9 +19,6 @@
 
     /* The image used */
   background-image: url("./images/Starlink-Hero-image.jpg");
-
-  /* Full height */
-  height: 100%;
 
   /* Center and scale the image nicely */
   background-position: center;
@@ -36,15 +37,14 @@
 }
 
 
-
+/*Hamburger icon muss auch andere farbe bekommen*/
 .custom-toggler.navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(125,125,125, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
-  
 .custom-toggler.navbar-toggler {
     border-color:rgba(125,125,125, 1);
-  } 
-
+} 
+/*-----------------------------------------------*/
 
 
 /* Die Classe aktiv wird in javascript geändert, abhängig von scroll position*/
@@ -66,7 +66,86 @@
     color: white;
 }
 
-/* Formatting Hero section*/
+/*  --------------    Formatting Hero section     ------------------------*/
 .main-hero-section h1{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+    font-size: 4rem;
+}
+
+.my-icon-play{
+    font-size: 5rem;
+    
+}
+.my-btn-launch
+{
+    font-family:  'Orbitron', sans-serif ;
+    background-color: #ffab00;
+    border-color: #ffab00;
+}
+
+.my-container-4-shadow-in-hero
+{
+    /* background: radial-gradient(circle, rgba(0,0,0,0.6194852941176471) 0%, rgba(74,47,255,0.4654236694677871) 100%); */
+    background: radial-gradient(circle, rgba(0,0,0,0.6194852941176471) 0%, rgba(255,171,0,0.5438550420168067) 100%);
+
+}
+
+/* Page devider after Hero Section */
+
+.custom-shape-divider-bottom-1597685798 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1597685798 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 61px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1597685798 .shape-fill {
+    fill: #e0e0e0;
+}
+
+/*END -------------- Page devider after Hero Section */
+
+
+/* --------------------------- Formatting tehnical equipment ---------------------- */
+
+
+.main-tehnic-equipment-section{
+    min-height: 100vh;
+    background-color: #e0e0e0;
+}
+
+/* formatting the tehnic equipment section */
+.my-tehnic-card{
+    position: relative; 
+    /* background:linear-gradient(164deg, rgba(255,255,255,1) 0%, rgba(194,141,35,0.16290266106442575) 100%), url('./images/rocket-background.png') ; */
+    /* background-size: contain;
+    background-repeat: no-repeat; */
+    height: 60vh;
+
+   
+}
+
+.my-tehnic-card::before {    
+   
+    background: url('./images/rocket-background.png')  right top no-repeat;
+    content: "";
+    /* z-index: -1; */
+    position: absolute;
+    opacity: 0.2;
+    top: 0px; bottom: 0; left: 0px; right: 0px;
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-size:  cover; 
 }
