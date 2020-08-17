@@ -1,0 +1,72 @@
+/* Reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a{
+    color: white;
+}
+
+
+/* Styling the main Hero section*/
+.main-hero-section{
+    min-height: 100vh;
+
+    /* The image used */
+  background-image: url("./images/Starlink-Hero-image.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.navbar{
+    background-color: #0e0a07;
+    transition: all 0.6s;
+}
+.navbar .nav-link {
+    background-color: #0e0a07;
+    transition: all 0.6s;
+}
+
+
+
+.custom-toggler.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(125,125,125, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+  
+.custom-toggler.navbar-toggler {
+    border-color:rgba(125,125,125, 1);
+  } 
+
+
+
+/* Die Classe aktiv wird in javascript geändert, abhängig von scroll position*/
+.navbar.active  .nav-link{
+    background-color: lightgrey;
+    color: black;
+}
+
+.navbar.active {
+    background-color: lightgrey;
+    color: black;
+}
+
+.navbar.active .navbar-brand{
+    color: black;
+}
+
+.navbar.active .navbar-toggler-icon{
+    color: white;
+}
+
+/* Formatting Hero section*/
+.main-hero-section h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
